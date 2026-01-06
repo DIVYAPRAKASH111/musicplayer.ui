@@ -4,102 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A modern, minimal music player interface">
-    <title>Music Player</title>
+    <title>Melodify - Music Streaming</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <main class="player-container">
-        <article class="player-card">
 
-            <!-- Album Art -->
-            <figure class="album-art">
-                <div class="album-image">
-                    <svg class="music-icon" viewBox="0 0 24 24" fill="none">
-                        <path d="M9 18V5L21 3V16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="1.5" />
-                        <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="1.5" />
-                    </svg>
-                </div>
-            </figure>
+    <nav class="navbar">
+        <a href="#" class="logo">♪ Melodify</a>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </nav>
 
-            <!-- Track Info -->
-            <header class="track-info">
-                <h1 class="track-title">Midnight Dreams</h1>
-                <p class="artist-name">Aurora Waves</p>
-            </header>
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Listen to Music Without Limits</h1>
+            <p>Stream millions of songs for free. No ads, no interruptions.</p>
+            <a href="#" class="btn btn-large">Start Listening</a>
+        </div>
+        <div class="player-card">
+            <img src="images/phone na hello.jpg" alt="Phone Na Hello Album Cover" class="album-cover">
+            <div class="song-title">Phone Na Hello</div>
+            <div class="artist-name">Album • 2025</div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="controls">
+                <button class="control-btn">⏮</button>
+                <button class="control-btn play-btn">▶</button>
+                <button class="control-btn">⏭</button>
+            </div>
+        </div>
+    </header>
 
-            <!-- Progress Bar -->
-            <section class="progress-section">
-                <div class="progress-bar">
-                    <div class="progress-fill">
-                        </di </div>
-                        <div class="time-info">
-                            <span class="time-current">1:24</span>
-                            <span class="time-total">3:45</span>
-                        </div>
-            </section>
+    <section class="trending">
+        <h2>Trending Tamil Songs</h2>
+        <div class="songs-grid">
+            <a href="https://www.youtube.com/watch?v=QxGVgXf_LNk" target="_blank" class="song-card">
+                <img src="images/phone na hello.jpg" alt="Phone Na Hello" class="song-cover">
+                <div class="song-name">Phone Na Hello</div>
+                <div class="song-artist">Album • 2025</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=XzJA29lh1EM" target="_blank" class="song-card">
+                <img src="images/download.jpg" alt="Illuminati" class="song-cover">
+                <div class="song-name">Illuminati</div>
+                <div class="song-artist">Anirudh • Aavesham</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=x3gZODqgPA4" target="_blank" class="song-card">
+                <img src="images/arabic kuthu.jpg" alt="Arabic Kuthu" class="song-cover">
+                <div class="song-name">Arabic Kuthu</div>
+                <div class="song-artist">Anirudh • Beast</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=Hh9D6IRdthE" target="_blank" class="song-card">
+                <img src="images/vaathi coming.jpg" alt="Vaathi Coming" class="song-cover">
+                <div class="song-name">Vaathi Coming</div>
+                <div class="song-artist">Anirudh • Master</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=gP_Z0dSppAM" target="_blank" class="song-card">
+                <img src="images/kaavala.jpg" alt="Kaavaalaa" class="song-cover">
+                <div class="song-name">Kaavaalaa</div>
+                <div class="song-artist">Anirudh • Jailer</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=x6Q7c9RyMzk" target="_blank" class="song-card">
+                <img src="images/rowdy baby.jpg" alt="Rowdy Baby" class="song-cover">
+                <div class="song-name">Rowdy Baby</div>
+                <div class="song-artist">Yuvan • Maari 2</div>
+            </a>
+        </div>
+    </section>
 
-            <nav class="controls">
-                <button class="btn btn-secondary" aria-label="Shuffle">
-                    <svg viewBox="0 0 24 24" fill="none">
-                        <path d="M16 3H21V8M4 20L21 3M21 16V21H16M15 15L21 21M4 4L9 9" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
+    <section id="features" class="features">
+        <h2>Why Melodify?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎧</div>
+                <h3>High Quality Audio</h3>
+                <p>Crystal clear sound on every track.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">�</div>
+                <h3>Any Device</h3>
+                <p>Listen on phone, tablet, or desktop.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Offline Mode</h3>
+                <p>Download and listen anywhere.</p>
+            </div>
+        </div>
+    </section>
 
-                <button class="btn btn-secondary" aria-label="Previous">
-                    <svg viewBox="0 0 24 24" fill="none">
-                        <path d="M19 20L9 12L19 4V20Z" fill="currentColor" />
-                        <path d="M5 4V20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
-                    </svg>
-                </button>
+    <footer class="footer">
+        <p>© 2026 Melodify. All rights reserved.</p>
+    </footer>
 
-                <button class="btn btn-primary" aria-label="Play">
-                    <svg viewBox="0 0 24 24" fill="none">
-                        <path d="M8 5V19L19 12L8 5Z" fill="currentColor" />
-                    </svg>
-                </button>
-
-                <button class="btn btn-secondary" aria-label="Next">
-                    <svg viewBox="0 0 24 24" fill="none">
-                        <path d="M5 4L15 12L5 20V4Z" fill="currentColor" />
-                        <path d="M19 4V20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
-                    </svg>
-                </button>
-
-                <button class="btn btn-secondary" aria-label="Repeat">
-                    <svg viewBox="0 0 24 24" fill="none">
-                        <path
-                            d="M17 1L21 5L17 9M3 11V9C3 6.79 4.79 5 7 5H21M7 23L3 19L7 15M21 13V15C21 17.21 19.21 19 17 19H3"
-                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
-            </nav>
-
-            <!-- Volume Control -->
-            <section class="volume-section">
-                <button class="volume-btn" aria-label="Volume">
-                    <svg viewBox="0 0 24 24" fill="none">
-                        <path d="M11 5L6 9H2V15H6L11 19V5Z" fill="currentColor" />
-                        <path
-                            d="M15.54 8.46C16.48 9.4 17 10.67 17 12C17 13.33 16.48 14.6 15.54 15.54M19.07 4.93C20.94 6.8 22 9.35 22 12C22 14.65 20.94 17.2 19.07 19.07"
-                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
-                <div class="volume-slider">
-                    <div class="volume-fill"></div>
-                    <div class="volume-thumb"></div>
-                </div>
-            </section>
-
-        </article>
-    </main>
 </body>
 
 </html>
